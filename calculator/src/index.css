@@ -1,0 +1,83 @@
+ :root {
+  --primary: #CB997E;
+  --secondary: #FF6700;
+  --dark:  #212529; 
+  --light: #E9ECEF; 
+ }
+
+ *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+ }
+
+ body{
+  background-color: var(--light);
+ }
+
+ .App{
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+ }
+
+ .calculator{
+  width: 100%;
+  max-width: 400px;
+  background-color: #fff;
+  border-radius: 5px;
+  overflow: hidden;
+  
+ }
+ .display{
+  padding: 16px;
+  text-align: right;
+  background-color: var(--dark);
+  color: var(--light);
+  font-weight: bold;
+ }
+
+ .display input{
+  font-size: 14px;
+  color: var(--dark);  
+  border-radius: 5px;
+  outline: none;
+  text-align: center;
+  padding: 5px;
+ }
+
+ button {
+    appearance: none;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 20px;
+    padding: 16px;
+    transition: 0.4s;
+ }
+ button:hover{
+    opacity: 0.9;
+ }
+
+ .operators{
+    display: flex;
+ }
+
+ .operators button{
+    flex: 1;
+    background-color: var(--primary);
+    font-weight:700;
+ }
+
+ .digits{
+    display: flex;
+    flex-wrap: wrap;
+ }
+
+ .digits button{
+    flex: 1 1 33.33%;
+    background-color: var(--dark);
+ }
+
